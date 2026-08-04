@@ -73,9 +73,9 @@ print(response.tool_calls)
 
 
 # Execute all tools (can be done in parallel with async)
-results = []
-for tool_call in response.tool_calls:
-    if tool_call['name'] == 'get_weather':
-        result = get_weather.invoke(tool_call)
-    ...
-    results.append(result)
+# results = []
+# for tool_call in response.tool_calls:
+#     if tool_call['name'] == 'get_weather':
+#         result = get_weather.invoke(tool_call)
+#     ...
+#     results.append(result)
